@@ -1,0 +1,37 @@
+@use "./variables" as *;
+
+@mixin container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+  @media (max-width: 900px) {
+    padding-left: 0.8rem;
+    padding-right: 0.8rem;
+  }
+
+  @media (max-width: 600px) {
+    padding-left: 0.6rem;
+    padding-right: 0.6rem;
+  }
+}
+
+
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == desktop {
+    @media (max-width: $bp-desktop) {
+      @content;
+    }
+  } @else if $breakpoint == tablet {
+    @media (max-width: $bp-tablet) {
+      @content;
+    }
+  } @else if $breakpoint == mobile {
+    @media (max-width: $bp-mobile) {
+      @content;
+    }
+  }
+}

@@ -1,0 +1,82 @@
+.future-cta {
+  position: relative;
+  background-color: #000;
+  background-image: url("/src/assets/future-cta-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: contain;
+
+  padding: 6rem 0 5rem;
+  color: #ffffff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.future-cta-inner {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.future-chip {
+  border: none;
+  outline: none;
+  border-radius: 999px;
+  padding: 0.55rem 1.6rem;
+  margin-bottom: 2rem;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+
+  background: linear-gradient(90deg, #8a36ff, #e045ff);
+  color: #fff;
+  box-shadow: 0 12px 30px rgba(139, 53, 255, 0.55);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.future-title {
+  font-size: 3rem;
+  line-height: 1.15;
+  font-weight: 400;
+  margin: 0 0 2rem;
+
+  .highlight {
+    background: linear-gradient(90deg, #c46bff, #ff7aca);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+}
+
+.future-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .future-cta {
+    padding: 4.5rem 0 4rem;
+    background-size: 140%;
+  }
+
+  .future-title {
+    font-size: 2.4rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .future-cta {
+    padding: 4rem 0 3.5rem;
+    background-size: 180%;
+  }
+
+  .future-title {
+    font-size: 2rem;
+  }
+}

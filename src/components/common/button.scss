@@ -1,0 +1,61 @@
+.btn {
+  cursor: pointer;
+  border-radius: 50px;
+  border: none;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}
+
+.btn-sm {
+  padding: 0.45rem 1rem;
+}
+
+.btn-md {
+  padding: 0.65rem 1.4rem;
+}
+
+.btn-lg {
+  padding: 0.85rem 2rem;
+}
+
+.btn-full {
+  width: 100%;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, #7b5cff, #9b5cff);
+  color: #fff;
+  box-shadow: 0 8px 25px rgba(123, 92, 255, 0.4);
+
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-outline {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+}
+
+.btn-ghost {
+  background: transparent;
+  color: #ccc;
+  border: none;
+
+  &:hover {
+    color: #fff;
+  }
+}

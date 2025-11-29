@@ -1,0 +1,27 @@
+@use "utils/variables" as *;
+@use "utils/mixins" as *;
+
+@import "base/reset";
+@import "base/typography";
+
+/* Layout */
+@import "../styles/layout//header";
+@import "../styles/layout/footer";
+
+
+/* Sections */
+@import "../styles/sections/Section1.scss";
+@import "../styles/sections/Section2.scss";
+@import "../styles/sections/Section3.scss";
+@import "../styles/sections/Section4.scss";
+@import "../styles/sections/Section5.scss";
+@import "../styles/sections/Section6.scss";
+@import "../styles/sections/Section7.scss";
+
+.container {
+  @include container;
+}
+
+section[id] {
+  scroll-margin-top: 80px;
+}

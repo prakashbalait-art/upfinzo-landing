@@ -1,0 +1,225 @@
+.industry {
+  background: #000;
+  color: #fff;
+  padding: 5rem 0 5rem;
+
+  .industry-inner {
+    display: grid;
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1.1fr);
+    align-items: center;
+    column-gap: 2.8rem;
+  }
+
+  /* LEFT SIDE */
+  .industry-left {
+    max-width: 430px;
+  }
+
+  .industry-kicker {
+    font-size: 0.95rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #34cfff;
+    margin-bottom: 0.8rem;
+  }
+
+  .industry-title {
+    font-size: 3.1rem;
+    line-height: 1.1;
+    font-weight: 400;
+    margin-bottom: 1.8rem;
+  }
+
+  .industry-list {
+    list-style: none;
+    margin: 0 0 2.5rem;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+  }
+
+  .industry-list-item {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 1rem;
+    color: #d5d7f2;
+  }
+
+  .check-icon {
+    width: 22px;
+    height: 22px;
+    border-radius: 999px;
+    border: 2px solid #4de5ff;
+    position: relative;
+    flex-shrink: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 5px;
+      top: 3px;
+      width: 8px;
+      height: 12px;
+      border-right: 2px solid #4de5ff;
+      border-bottom: 2px solid #4de5ff;
+      transform: rotate(40deg);
+    }
+  }
+
+  .industry-right {
+    display: flex;
+    justify-content: center;
+  }
+  .laptop {
+    position: relative;
+    width: 100%;
+    max-width: 560px;
+    aspect-ratio: 16 / 10;
+    background-image: url("/src/assets/laptop-frame.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .laptop-screen {
+    position: absolute;
+    top: 11.5%;
+    left: 12.5%;
+    width: 75%;
+    height: 60%;
+
+    border-radius: 12px;
+    overflow: hidden;
+    background: radial-gradient(circle at top, #4a2b8f, #15051f 60%);
+    box-shadow: inset 0 0 22px rgba(0, 0, 0, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .carousel-track {
+    flex: 1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.4s ease;
+  }
+
+  .carousel-card {
+    position: relative;
+    flex: 0 0 100%;
+    display: flex;
+    align-items: flex-end;
+    padding: 1.4rem 1.6rem;
+    overflow: hidden;
+  }
+
+  .card-gradient {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at top left, #d485ff, transparent 55%),
+      radial-gradient(circle at bottom right, #4dd9ff, transparent 55%);
+    opacity: 0.9;
+  }
+
+  .card-inner {
+    position: relative;
+    z-index: 1;
+  }
+
+  .card-title {
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+
+  .card-subtitle {
+    font-size: 0.85rem;
+    color: #d3d5f1;
+  }
+
+  .carousel-controls {
+    display: flex;
+    justify-content: flex-start;
+    gap: 0.6rem;
+    padding: 0.8rem 1.2rem 1.1rem;
+    position: relative;
+    z-index: 2;
+  }
+
+  .future-chip {
+    border: none;
+    outline: none;
+    border-radius: 999px;
+    padding: 0.55rem 1.6rem;
+    margin-bottom: 2rem;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    cursor: pointer;
+
+    background: linear-gradient(90deg, #8a36ff, #e045ff);
+    color: #fff;
+    box-shadow: 0 12px 30px rgba(139, 53, 255, 0.55);
+
+    &:hover {
+        opacity: 0.9;
+    }
+    }
+
+  .nav-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 999px;
+    border: none;
+    cursor: pointer;
+    background: rgba(0, 0, 0, 0.55);
+    color: #fff;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.2s ease, transform 0.15s ease;
+
+    &:hover {
+      background: rgba(255, 255, 255, 0.16);
+      transform: translateY(-1px);
+    }
+  }
+
+  /* RESPONSIVE */
+  @media (max-width: 992px) {
+    .industry-inner {
+      grid-template-columns: 1fr;
+      gap: 3.5rem;
+    }
+
+    .industry-left {
+      max-width: none;
+    }
+
+    .industry-right {
+      justify-content: flex-start;
+    }
+  }
+
+  @media (max-width: 640px) {
+    padding: 4rem 0;
+
+    .industry-title {
+      font-size: 2.5rem;
+    }
+
+    .laptop {
+      max-width: 100%;
+    }
+
+    .laptop-screen {
+        top: 11.5%;
+        left: 12.5%;
+        width: 75%;
+        height: 60%;
+    }
+  }
+}
