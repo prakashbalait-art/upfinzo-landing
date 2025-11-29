@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { section2Thunk } from "../../store/services/sectionsService";
+import statsOrbit from "../../assets/stats-orbit.png";
 
 const Section2 = () => {
 
@@ -30,7 +31,7 @@ const Section2 = () => {
 
           <div className="stats-visual">
             <img
-              src="../../assets/stats-orbit.png"
+              src={statsOrbit}
               alt="Colorful abstract payment visual"
             />
           </div>
