@@ -3,6 +3,8 @@ import Button from "../common/Button";
 
 import "../../styles/layout/_footer.scss";
 
+import portalLogo from "../../assets/logo.png";
+
 const Footer = () => {
   const productLinks = [
     "AI Banking",
@@ -30,7 +32,7 @@ const Footer = () => {
         <div className="container footer-main-inner">
           <div className="footer-brand">
             <div className="footer-logo">
-              <img src="/src/assets/logo.png" alt="UpFinzo Logo" />
+              <img src={portalLogo} alt="UpFinzo Logo" />
             </div>
             <p className="footer-tagline">Connect. Control. Comply</p>
             <p className="footer-text">

@@ -1,6 +1,14 @@
 import React from "react";
 import Button from "../common/Button";
 
+
+import braveLogo from "../../assets/logos/brave.png";
+import circleLogo from "../../assets/logos/circle.png";
+import discordLogo from "../../assets/logos/discord.png";
+import googleLogo from "../../assets/logos/google.png";
+import jumpLogo from "../../assets/logos/jump.png";
+import magicLogo from "../../assets/logos/magic.png";
+
 const Section1 = () => {
   return (
     <section id="ai-banking" className="hero">
@@ -29,12 +37,12 @@ const Section1 = () => {
         </p>
 
         <div className="hero-brand-strip">
-          <img src="/src/assets/logos/brave.png" alt="Brave" />
-          <img src="/src/assets/logos/circle.png" alt="Circle" />
-          <img src="/src/assets/logos/discord.png" alt="Discord" />
-          <img src="/src/assets/logos/google.png" alt="Google" />
-          <img src="/src/assets/logos/jump.png" alt="Jump" />
-          <img src="/src/assets/logos/magic.png" alt="Magic Eden" />
+          <img src={braveLogo} alt="Brave" />
+          <img src={circleLogo} alt="Circle" />
+          <img src={discordLogo} alt="Discord" />
+          <img src={googleLogo} alt="Google" />
+          <img src={jumpLogo} alt="Jump" />
+          <img src={magicLogo} alt="Magic Eden" />
         </div>
 
       </div>
