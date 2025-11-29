@@ -30,7 +30,7 @@ const Section2 = () => {
 
           <div className="stats-visual">
             <img
-              src="/src/assets/stats-orbit.png"
+              src="../../assets/stats-orbit.png"
               alt="Colorful abstract payment visual"
             />
           </div>
