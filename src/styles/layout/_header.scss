@@ -87,6 +87,18 @@
   transform: translateY(8px);
   transition: all 0.15s ease;
   z-index: 20;
+
+  @media (max-width: 768px) {
+    .submenu {
+      position: static;
+      opacity: 1;
+      visibility: visible;
+      transform: none;
+      box-shadow: none;
+      padding-left: 1rem;
+      background: transparent;
+    }
+  }
 }
 
 .submenu.active {
@@ -101,11 +113,17 @@
 
 .submenu-link {
   display: block;
+  width: 100%;
   padding: 0.45rem 1rem;
   font-size: 0.85rem;
   color: #a4a6c7;
   text-decoration: none;
   white-space: nowrap;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
 
   &:hover {
     color: #ffffff;
@@ -157,6 +175,8 @@
   .header-content {
     padding: 0.75rem 1rem;
     gap: 0.75rem;
+    flex-wrap: wrap;
+    align-items: center;
   }
 
   .nav {
@@ -168,6 +188,15 @@
 
   .nav.nav--open {
     display: block;
+  }
+
+  .nav-item {
+    width: 100%;
+  }
+
+  .nav-link {
+    width: 100%;
+    text-align: left;
   }
 
   .nav-list {
